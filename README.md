@@ -3,7 +3,7 @@
 An autonomous Python coding agent powered by a local LLM using Ollama.  
 The agent generates Python code for a given task, executes it, detects runtime errors, and automatically retries with corrected code until the script runs successfully.
 
----
+
 
 ## Features
 
@@ -14,7 +14,7 @@ The agent generates Python code for a given task, executes it, detects runtime e
 - Uses custom system/debug prompts
 - Simple modular architecture
 
----
+
 
 ## Project Structure
 
@@ -27,7 +27,7 @@ The agent generates Python code for a given task, executes it, detects runtime e
 └── README.md
 ```
 
----
+
 
 ## How It Works
 
@@ -43,7 +43,7 @@ The agent generates Python code for a given task, executes it, detects runtime e
    - The code succeeds
    - Maximum retry limit is reached
 
----
+
 
 ## Files Overview
 
@@ -73,7 +73,7 @@ Used to guide the LLM during:
 - Initial code generation
 - Automatic debugging
 
----
+
 
 ## Requirements
 
@@ -81,7 +81,7 @@ Used to guide the LLM during:
 - Ollama installed locally
 - DeepSeek Coder model downloaded
 
----
+
 
 ## Install Dependencies
 
@@ -89,7 +89,7 @@ Used to guide the LLM during:
 pip install langchain-community
 ```
 
----
+
 
 ## Install Ollama
 
@@ -97,7 +97,7 @@ Download and install Ollama:
 
 https://ollama.com
 
----
+
 
 ## Pull the Model
 
@@ -105,7 +105,7 @@ https://ollama.com
 ollama pull deepseek-coder:6.7b
 ```
 
----
+
 
 ## Run Ollama
 
@@ -113,7 +113,7 @@ ollama pull deepseek-coder:6.7b
 ollama serve
 ```
 
----
+
 
 ## Run the Agent
 
@@ -121,7 +121,7 @@ ollama serve
 python agent.py
 ```
 
----
+
 
 ## Example Task
 
@@ -134,7 +134,7 @@ Create a Python script that:
 """
 ```
 
----
+
 
 ## Example Workflow
 
@@ -142,7 +142,7 @@ Create a Python script that:
 Task → Generate Code → Execute → Error? → Debug → Retry
 ```
 
----
+
 
 ## Retry Mechanism
 
@@ -154,7 +154,7 @@ Default:
 MAX_RETRIES = 5
 ```
 
----
+
 
 ## Example Output
 
@@ -168,7 +168,7 @@ OUTPUT:
 Average salary: 55000
 ```
 
----
+
 
 ## Technologies Used
 
@@ -178,7 +178,7 @@ Average salary: 55000
 - DeepSeek Coder LLM
 - Subprocess Execution
 
----
+
 
 ## Future Improvements
 
@@ -191,7 +191,7 @@ Average salary: 55000
 - API integration
 - Code quality scoring
 
----
+
 
 ## Security Note
 
@@ -199,7 +199,7 @@ This project executes AI-generated Python code locally.
 
 Only run in a trusted environment or sandboxed container.
 
----
+
 
 ## License
 
